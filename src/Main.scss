@@ -1,0 +1,46 @@
+body {
+  background-color: #282c34;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainSquare {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.profileImage {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.profileInfo {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  * {
+    text-transform: lowercase;
+  }
+}
+
+.profileContent {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.mainContent {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
