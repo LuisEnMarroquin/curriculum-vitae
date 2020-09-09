@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { es, en } from './language';
+import en from './i18n/en';
+import es from './i18n/es';
 import 'Main.scss';
 
 import HomeIcon from '@material-ui/icons/Home';
@@ -11,13 +12,23 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import Select from '@material-ui/core/Select';
 import Divider from '@material-ui/core/Divider';
 import Tooltip from '@material-ui/core/Tooltip';
+import MenuItem from '@material-ui/core/MenuItem';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
+import FormControl from '@material-ui/core/FormControl';
 
 function Main() {
   const [lang, setLang] = useState(en);
+  const [language, setLanguage] = useState(1);
+
+  const changeLanguage = (id:number) => {
+    setLanguage(id)
+    if (id === 1) setLang(en)
+    if (id === 2) setLang(es)
+  }
 
   return (
     <Container style={{ paddingTop: '24px' }}>
@@ -29,7 +40,7 @@ function Main() {
             </div>
             <div className="profileInfo">
               <div>
-                <Tooltip title="Oct 16, 1999" placement='left'>
+                <Tooltip title="Oct 16, 1999" placement='right'>
                   <Button color="primary" startIcon={<TodayIcon/>}>20 {lang.years}</Button>
                 </Tooltip>
               </div>
@@ -75,25 +86,37 @@ function Main() {
                   </Button>
                 </a>
               </div>
+              <div style={{ paddingTop: '10px' }}>
+                <FormControl style={{ width: '100%' }}>
+                  <Select value={language} variant="outlined" onChange={e => changeLanguage(Number(e.target.value))} inputProps={{ 'aria-label': 'Operation select' }}>
+                    <MenuItem value={1}>{lang.en}</MenuItem>
+                    <MenuItem value={2}>{lang.es}</MenuItem>
+                  </Select>
+                </FormControl>
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={8}>
             <div className="mainContent">
               <Typography variant="h5" align='center' gutterBottom>Luis Enrique Marroquín González</Typography>
-              <Typography variant="subtitle1" align='justify'>{lang.aboutMe}</Typography>
+              <Typography variant="subtitle2" align='justify'>{lang.aboutMe}</Typography>
               <Divider />
-              <Typography variant="h6" align='center' gutterBottom>Languages</Typography>
-              <Typography variant="subtitle1" align='justify'>Spanish (Native)</Typography>
-              <Typography variant="subtitle1" align='justify'>English (Intermediate-advanced)</Typography>
-              <Typography variant="subtitle2" align='justify' gutterBottom>* {lang.en1} 99%, {lang.en2} 75%, {lang.en3} 85% and {lang.en4} 75%</Typography>
+              <Typography variant="h6" align='center' gutterBottom>Education</Typography>
+              <Typography variant="subtitle1" align='justify'>{lang.career}</Typography>
+              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.careerText}</Typography>
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>Training</Typography>
               <Typography variant="subtitle1" align='justify'>Codellege by Softtek (480 hours)</Typography>
-              <Typography variant="subtitle1" align='justify' gutterBottom>January - July 2018</Typography>
+              <Typography variant="subtitle1" align='justify'>January - July 2018</Typography>
               <Typography variant="subtitle2" align='justify' gutterBottom>{lang.codellegeText}</Typography>
               <Typography variant="subtitle1" align='justify'>Work at Softtek as full-stack developer</Typography>
               <Typography variant="subtitle1" align='justify'>July 2018 - present</Typography>
               <Typography variant="subtitle2" align='justify' gutterBottom>{lang.workText}</Typography>
+              <Divider />
+              <Typography variant="h6" align='center' gutterBottom>Languages</Typography>
+              <Typography variant="subtitle1" align='justify'>* {lang.es} (Native)</Typography>
+              <Typography variant="subtitle1" align='justify'>* {lang.en} (Intermediate-advanced)</Typography>
+              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.en1} 99%, {lang.en2} 75%, {lang.en3} 85% and {lang.en4} 75%</Typography>
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.knowTitle}</Typography>
               <Grid container spacing={2}>
