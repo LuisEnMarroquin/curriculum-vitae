@@ -4,7 +4,7 @@
   "description": "A simple React app with TypeScript, Sass and Material-UI",
   "version": "1.0.0",
   "license": "MIT",
-  "homepage": "/curriculum-vitae",
+  "homepage": "/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
