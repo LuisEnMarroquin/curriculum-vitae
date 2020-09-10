@@ -1,8 +1,10 @@
 body {
+  margin: 0px;
   background-color: #282c34;
 }
 
-a {
+* {
+  text-transform: none;
   text-decoration: none;
 }
 
@@ -11,10 +13,14 @@ a {
   margin-bottom: 8px !important;
 }
 
-.mainSquare {
-  padding: 15px;
-  border-radius: 10px;
-  background-color: white;
+.mainContainer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  section {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+  }
 }
 
 .profileImage {
@@ -32,9 +38,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 10px;
-  * {
-    text-transform: lowercase;
-  }
 }
 
 .profileContent {
@@ -48,4 +51,12 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
+}
+
+.sectionItem {
+  margin-bottom: 4px;
+}
+
+.selectLang {
+  padding-top: 10px;
 }

@@ -14,7 +14,7 @@ function SimpleList({ title, content }:ISimpleList) {
       {
         content.map((item, index) => {
           let isLast = content.length === (index + 1) ? true : false
-          return <Typography key={`${title}-${index}`} variant="subtitle2" align='justify' gutterBottom={isLast}>* {item}</Typography>
+          return <Typography key={`${title}-${index}`} variant="body2" align='justify' gutterBottom={isLast}>* {item}</Typography>
         })
       }
     </div>

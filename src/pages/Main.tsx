@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import en from './i18n/en';
-import es from './i18n/es';
-import 'Main.scss';
+import en from 'i18n/en';
+import es from 'i18n/es';
 
 import SelectLang from 'components/SelectLang'
 import SimpleList from 'components/SimpleList'
+import SectionItem from 'components/SectionItem'
 
 import HomeIcon from '@material-ui/icons/Home';
 import EmailIcon from '@material-ui/icons/Email';
@@ -31,12 +31,12 @@ function Main() {
   }
 
   return (
-    <Container style={{ paddingTop: '24px' }}>
-      <div className="mainSquare">
+    <Container className="mainContainer">
+      <section>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={12} md={4}>
             <div className="profileImage">
-              <img src={require('./assets/profile.jpg')} alt="profile"/>
+              <img src={require('assets/profile.jpg')} alt="profile"/>
             </div>
             <div className="profileInfo">
               <div>
@@ -56,9 +56,7 @@ function Main() {
               </div>
               <div>
                 <a href="https://www.google.com.mx/maps/place/Monterrey,+Nuevo+Leon" target="_blank" rel="noopener noreferrer">
-                  <Button color="primary" startIcon={<HomeIcon/>}>
-                    <span style={{ textTransform: 'none' }}>Monterrey, México</span>
-                  </Button>
+                  <Button color="primary" startIcon={<HomeIcon/>}>Monterrey, México</Button>
                 </a>
               </div>
             </div>
@@ -74,16 +72,12 @@ function Main() {
               <Typography variant="h5" align='center' gutterBottom>{lang.projects}</Typography>
               <div>
                 <a href="https://github.com/LuisEnMarroquin" target="_blank" rel="noopener noreferrer">
-                  <Button color="primary" startIcon={<GitHubIcon/>}>
-                    <span style={{ textTransform: 'none' }}>LuisEnMarroquin</span>
-                  </Button>
+                  <Button color="primary" startIcon={<GitHubIcon/>}>LuisEnMarroquin</Button>
                 </a>
               </div>
               <div>
                 <a href="https://www.linkedin.com/in/luisenmarroquin" target="_blank" rel="noopener noreferrer">
-                  <Button color="primary" startIcon={<LinkedInIcon/>}>
-                    <span style={{ textTransform: 'none' }}>LuisEnMarroquin</span>
-                  </Button>
+                  <Button color="primary" startIcon={<LinkedInIcon/>}>LuisEnMarroquin</Button>
                 </a>
               </div>
               <SelectLang language={language} change={changeLanguage} />
@@ -95,21 +89,15 @@ function Main() {
               <Typography variant="subtitle2" align='justify'>{lang.aboutMe}</Typography>
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.study}</Typography>
-              <Typography variant="subtitle1" align='justify'>{lang.career}</Typography>
-              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.careerText}</Typography>
+              <SectionItem title={lang.career} subtitle={lang.careerText} />
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.exp}</Typography>
-              <Typography variant="subtitle1" align='justify'>{lang.codellege}</Typography>
-              <Typography variant="subtitle2" align='justify'>{lang.codellegeTime}</Typography>
-              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.codellegeText}</Typography>
-              <Typography variant="subtitle1" align='justify'>{lang.workTime}</Typography>
-              <Typography variant="subtitle2" align='justify'>{lang.workTime}</Typography>
-              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.workText}</Typography>
+              <SectionItem title={lang.codelleMain} subtitle={lang.codelleTime} contents={lang.codelleText} />
+              <SectionItem title={lang.softtekMain} subtitle={lang.softtekTime} contents={lang.softtekText} />
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.lang}</Typography>
-              <Typography variant="subtitle1" align='justify'>* {lang.es}</Typography>
-              <Typography variant="subtitle1" align='justify'>* {lang.en}</Typography>
-              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.en1} 99%, {lang.en2} 75%, {lang.en3} 85% {lang.and} {lang.en4} 75%</Typography>
+              <SectionItem title={lang.spanish} />
+              <SectionItem title={lang.english} contents={lang.englishText} />
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.knowTitle}</Typography>
               <Grid container spacing={2}>
@@ -129,7 +117,7 @@ function Main() {
             </div>
           </Grid>
         </Grid>
-      </div>
+      </section>
     </Container>
   );
 }
