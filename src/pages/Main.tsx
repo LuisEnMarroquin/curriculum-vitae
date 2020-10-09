@@ -11,7 +11,6 @@ import EmailIcon from '@material-ui/icons/Email';
 import TodayIcon from '@material-ui/icons/Today';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
