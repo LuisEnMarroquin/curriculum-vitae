@@ -45,11 +45,6 @@ function Main() {
                 </Tooltip>
               </div>
               <div>
-                <a href="https://wa.me/528186901451" target="_blank" rel="noopener noreferrer">
-                  <Button color="primary" startIcon={<WhatsAppIcon/>}>+52 818 690 1451</Button>
-                </a>
-              </div>
-              <div>
                 <a href="mailto:mluis651@gmail.com" target="_blank" rel="noopener noreferrer">
                   <Button color="primary" startIcon={<EmailIcon/>}>mluis651@gmail.com</Button>
                 </a>
