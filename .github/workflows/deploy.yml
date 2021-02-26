@@ -13,7 +13,7 @@ jobs:
     - run: yarn install --production --ignore-optional --pure-lockfile --non-interactive
     - run: yarn build
     - run: cp CNAME build/CNAME
-    - uses: LuisEnMarroquin/gh-pages-publish@v2.3.2
+    - uses: LuisEnMarroquin/gh-pages-publish@v2.3.4
       with:
         FOLDER: build
         SSHKEY: ${{ secrets.SSH }}

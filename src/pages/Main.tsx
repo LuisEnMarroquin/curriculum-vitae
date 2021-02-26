@@ -29,6 +29,12 @@ function Main() {
     if (id === 2) setLang(es)
   }
 
+  const calculateAge = (birthday:Date) => {
+    var ageDifMs = Date.now() - birthday.getTime()
+    var ageDate = new Date(ageDifMs) // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970)
+  }
+
   return (
     <Container className="mainContainer">
       <section>
@@ -39,13 +45,13 @@ function Main() {
             </div>
             <div className="profileInfo">
               <div>
-                <Tooltip title="Oct 16, 1999" placement='right'>
-                  <Button color="primary" startIcon={<TodayIcon/>}>20 {lang.years}</Button>
+                <Tooltip title="October 16, 1999" placement='right'>
+                  <Button color="primary" startIcon={<TodayIcon/>}>{calculateAge(new Date('1999-10-16'))} {lang.years}</Button>
                 </Tooltip>
               </div>
               <div>
-                <a href="mailto:mluis651@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <Button color="primary" startIcon={<EmailIcon/>}>mluis651@gmail.com</Button>
+                <a href="mailto:luis@marroquin.dev" target="_blank" rel="noopener noreferrer">
+                  <Button color="primary" startIcon={<EmailIcon/>}>luis@marroquin.dev</Button>
                 </a>
               </div>
               <div>
@@ -55,15 +61,14 @@ function Main() {
               </div>
             </div>
             <div className="profileContent">
-              <Typography variant="h5" align='center' gutterBottom>{lang.objMain}</Typography>
-              <Typography variant="subtitle1" align='justify' gutterBottom>{lang.objText}</Typography>
-              <Typography variant="h5" align='center' gutterBottom>{lang.interests}</Typography>
-              <Typography variant="subtitle1" align='justify'>* Full stack development</Typography>
-              <Typography variant="subtitle1" align='justify'>* Process automation</Typography>
-              <Typography variant="subtitle1" align='justify'>* Server management</Typography>
-              <Typography variant="subtitle1" align='justify'>* Hardware programming</Typography>
-              <Typography variant="subtitle1" align='justify' gutterBottom>* Docker and CI/CD</Typography>
-              <Typography variant="h5" align='center' gutterBottom>{lang.projects}</Typography>
+              <Typography variant="h6" align='center' gutterBottom>{lang.objMain}</Typography>
+              <Typography variant="subtitle2" align='justify' gutterBottom>{lang.aboutMe}</Typography>
+              <Typography variant="h6" align='center' gutterBottom>{lang.interests}</Typography>
+              <Typography variant="subtitle2" align='justify'>* Full stack development</Typography>
+              <Typography variant="subtitle2" align='justify'>* Process automation</Typography>
+              <Typography variant="subtitle2" align='justify'>* Server management</Typography>
+              <Typography variant="subtitle2" align='justify' gutterBottom>* CI/CD and containers</Typography>
+              <Typography variant="h6" align='center' gutterBottom>{lang.projects}</Typography>
               <div>
                 <a href="https://github.com/LuisEnMarroquin" target="_blank" rel="noopener noreferrer">
                   <Button color="primary" startIcon={<GitHubIcon/>}>LuisEnMarroquin</Button>
@@ -80,32 +85,38 @@ function Main() {
           <Grid item xs={12} sm={12} md={8}>
             <div className="mainContent">
               <Typography variant="h5" align='center' gutterBottom>Luis Enrique Marroquín González</Typography>
-              <Typography variant="subtitle2" align='justify'>{lang.aboutMe}</Typography>
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.study}</Typography>
               <SectionItem title={lang.career} subtitle={lang.careerText} />
               <Divider />
-              <Typography variant="h6" align='center' gutterBottom>{lang.exp}</Typography>
+              <Typography variant="h6" align='center' gutterBottom>{lang.experience}</Typography>
               <SectionItem title={lang.codelleMain} subtitle={lang.codelleTime} contents={lang.codelleText} />
               <SectionItem title={lang.softtekMain} subtitle={lang.softtekTime} contents={lang.softtekText} />
               <Divider />
-              <Typography variant="h6" align='center' gutterBottom>{lang.lang}</Typography>
-              <SectionItem title={lang.spanish} />
-              <SectionItem title={lang.english} contents={lang.englishText} />
+              <Typography variant="h6" align='center' gutterBottom>{lang.langs}</Typography>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={12} md={6}>
+                  <SectionItem title={lang.english} />
+                </Grid>
+                <Grid item xs={12} sm={12} md={6}>
+                  <SectionItem title={lang.spanish} />
+                </Grid>
+              </Grid>
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.knowTitle}</Typography>
               <Grid container spacing={2}>
-                <Grid item xs={12} sm={12} md={6}>
-                  <SimpleList title='OS' content={[ 'Windows 10 / macOS', 'Ubuntu Desktop / Server' ]} />
-                  <SimpleList title='Databases' content={[ 'MongoDB (advanced)' ]} />
-                  <SimpleList title='Languages' content={[ 'Pug / Handlebars', 'Sass / Stylus', 'JavaScript / TypeScript', 'Python 3' ]} />
-                  <SimpleList title='Frameworks' content={[ 'Bootstrap', 'Vue (Quasar)', 'React (Material-UI)', 'Node / Express' ]} />
+                <Grid item xs={12} sm={12} md={4}>
+                  <SimpleList title='OS' content={[ 'Windows 10', 'Ubuntu Server' ]} />
+                  <SimpleList title='Languages' content={[ 'JavaScript', 'TypeScript', 'Python', 'Java', 'Shell scripting' ]} />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6}>
-                  <SimpleList title='CI/CD tools' content={[ 'Jenkins', 'GitLab CI', 'GitHub Actions' ]} />
-                  <SimpleList title='Containers' content={[ 'Docker / docker-compose', 'Podman' ]} />
-                  <SimpleList title='Office' content={[ 'Word', 'Excel', 'PowerPoint' ]} />
-                  <SimpleList title='Others' content={[ 'Bash', 'SSH', 'Cypress' ]} />
+                <Grid item xs={12} sm={12} md={4}>
+                  <SimpleList title='Frameworks' content={[ 'React', 'Vue', 'Node' ]} />
+                  <SimpleList title='Testing' content={[ 'Selenium', 'Cypress' ]} />
+                  <SimpleList title='Databases' content={[ 'MongoDB' ]} />
+                </Grid>
+                <Grid item xs={12} sm={12} md={4}>
+                  <SimpleList title='CI/CD' content={[ 'Azure DevOps', 'Jenkins', 'GitHub Actions', 'GitLab CI' ]} />
+                  <SimpleList title='Containers' content={[ 'Docker', 'Compose', 'Swarm' ]} />
                 </Grid>
               </Grid>
             </div>

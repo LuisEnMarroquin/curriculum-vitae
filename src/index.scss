@@ -24,12 +24,11 @@ body {
 }
 
 .profileImage {
-  padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 35px;
   padding-bottom: 15px;
   img {
     width: 100%;
+    margin: 0 auto;
     border-radius: 20px;
   }
 }
@@ -47,7 +46,7 @@ body {
 }
 
 .mainContent {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -59,4 +58,10 @@ body {
 
 .selectLang {
   padding-top: 10px;
+}
+
+@media print {
+  .selectLang {
+    display: none !important;
+  }
 }
