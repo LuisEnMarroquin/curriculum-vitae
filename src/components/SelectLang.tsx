@@ -11,7 +11,7 @@ interface ISelectLang {
 
 function SelectLang({ language, change }:ISelectLang) {
   return (
-    <div className='selectLang'>
+    <div id='selectLang'>
       <FormControl fullWidth>
         <Select value={language} variant="outlined" onChange={e => change(Number(e.target.value))} inputProps={{ 'aria-label': 'Change language' }}>
           <MenuItem value={1}>English</MenuItem>

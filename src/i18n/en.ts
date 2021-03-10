@@ -1,5 +1,5 @@
 export default {
-  english: 'English (B2 Upper-Intermediate)',
+  english: 'English (Intermediate)',
   spanish: 'Spanish (Native)',
   years: 'years',
   objMain: 'About me',

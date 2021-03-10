@@ -9,6 +9,6 @@
     "**/node_modules/": true
   },
   "search.exclude": {
-    "**/yarn.lock": true
+    "**/package-lock.json": true
   }
 }

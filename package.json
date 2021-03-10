@@ -12,14 +12,18 @@
     "@types/react": "^16.9.48",
     "@types/react-dom": "^16.9.8",
     "node-sass": "^4.14.1",
+    "puppeteer": "^8.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
+    "selenium-webdriver": "^4.0.0-beta.1",
     "typescript": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "lint": "standard --fix",
+    "test": "node selenium.js"
   },
   "eslintConfig": {
     "extends": "react-app"

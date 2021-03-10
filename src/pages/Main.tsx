@@ -83,7 +83,7 @@ function Main() {
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={8}>
-            <div className="mainContent">
+            <div id="mainContent">
               <Typography variant="h5" align='center' gutterBottom>Luis Enrique Marroquín González</Typography>
               <Divider />
               <Typography variant="h6" align='center' gutterBottom>{lang.study}</Typography>
