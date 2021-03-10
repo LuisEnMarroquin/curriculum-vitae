@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "standard --fix",
-    "test": "node testing.js"
+    "pdf": "nodemon pdf.js"
   },
   "eslintConfig": {
     "extends": "react-app"

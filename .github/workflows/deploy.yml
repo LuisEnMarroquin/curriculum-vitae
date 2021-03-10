@@ -9,20 +9,28 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/cache@v2
+    - name: Get repository
+      uses: actions/checkout@v2
+    - name: Restore cache
+      uses: actions/cache@v2
       env:
         cache-name: cache-node-modules
       with:
         path: ~/.npm
-        key: npm-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          npm-${{ hashFiles('**/package-lock.json') }}
-          npm-
-    - run: npm ci
-    - run: npm run build
-    - run: cp CNAME build/CNAME
-    - uses: LuisEnMarroquin/gh-pages-publish@v2.3.4
+        key: npm-${{hashFiles('**/package-lock.json')}}
+        restore-keys: npm-${{hashFiles('**/package-lock.json')}} npm-
+    - name: NPM install
+      run: npm ci
+    - name: Build project
+      run: npm run build
+    - name: Run in background
+      run: node server.js &
+    - name: Copy CNAME
+      run: cp CNAME build/CNAME
+    - name: Create PDF
+      run: node pdf.js
+    - name: Publish to GH Pages
+      uses: LuisEnMarroquin/gh-pages-publish@v2.3.4
       with:
         FOLDER: build
         SSHKEY: ${{ secrets.SSH }}
