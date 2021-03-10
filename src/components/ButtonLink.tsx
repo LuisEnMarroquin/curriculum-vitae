@@ -1,4 +1,4 @@
-import { ReactNode } from 'React'
+import { ReactNode } from 'react'
 import Button from '@material-ui/core/Button'
 
 interface IButtonLink {
