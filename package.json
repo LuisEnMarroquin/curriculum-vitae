@@ -1,7 +1,7 @@
 {
   "name": "curriculum-vitae",
   "author": "LuisEnMarroquin <luis@marroquin.dev>",
-  "description": "A simple React app with TypeScript, Sass and Material-UI",
+  "description": "React app with TypeScript, Sass and Material UI",
   "version": "1.0.0",
   "license": "MIT",
   "homepage": "/",
@@ -13,8 +13,8 @@
     "@types/react-dom": "^17.0.2",
     "node-sass": "^4.14.1",
     "puppeteer": "^8.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3",
     "serve-handler": "^6.1.3",
     "typescript": "^4.0.2"
