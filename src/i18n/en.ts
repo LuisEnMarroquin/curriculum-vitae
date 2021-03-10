@@ -1,4 +1,4 @@
-export default {
+const en = {
   english: 'English (Intermediate)',
   spanish: 'Spanish (Native)',
   years: 'years',
@@ -19,3 +19,5 @@ export default {
   experience: 'Experience',
   langs: 'Languages'
 }
+
+export default en

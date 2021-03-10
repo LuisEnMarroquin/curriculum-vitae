@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import profile from 'assets/profile.jpg';
 import en from 'i18n/en';
 import es from 'i18n/es';
 
@@ -41,7 +42,7 @@ function Main() {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={12} md={4}>
             <div className="profileImage">
-              <img src={require('assets/profile.jpg')} alt="profile"/>
+              <img src={profile} alt="profile"/>
             </div>
             <div className="profileInfo">
               <div>

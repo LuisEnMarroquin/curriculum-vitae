@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Typography from '@material-ui/core/Typography';
 
 interface ISectionItem {
@@ -8,9 +6,9 @@ interface ISectionItem {
   contents?: string;
 }
 
-function SectionItem({ title, subtitle='', contents='' }:ISectionItem) {
+function SectionItem({ title, subtitle = '', contents = '' }: ISectionItem) {
   return (
-    <div className='sectionItem'>
+    <div id='sectionItem'>
       <Typography variant="subtitle1" align='justify'>{title}</Typography>
       {
         subtitle === '' ? null : <Typography variant="body1" align='justify'>{subtitle}</Typography>
