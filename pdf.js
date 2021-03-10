@@ -9,10 +9,11 @@ const puppeteer = require('puppeteer');
 
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()
-  await page.goto('http://localhost:3000', { waitUntil: 'networkidle2' })
-  await page.setViewport({ width: 1500, height: 1200 })
 
-  await page.pdf({ ...pagePDF, path: 'build/curriculum-en.pdf' })
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle2' })
+  await page.setViewport({ width: 1920, height: 1080 })
+
+  await page.pdf({ ...pagePDF, path: 'build/cv-en.pdf' })
 
   const dropdown = await page.$('#selectLang')
   await dropdown.click()
@@ -20,7 +21,7 @@ const puppeteer = require('puppeteer');
   const spanish = await page.$('li[data-value="2"]')
   await spanish.click()
 
-  await page.pdf({ ...pagePDF, path: 'build/curriculum-es.pdf' })
+  await page.pdf({ ...pagePDF, path: 'build/cv-es.pdf' })
 
   await browser.close()
 })()

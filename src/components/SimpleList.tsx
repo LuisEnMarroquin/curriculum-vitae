@@ -1,22 +1,29 @@
-import Typography from '@material-ui/core/Typography';
+import Typography from '@material-ui/core/Typography'
 
 interface ISimpleList {
-  title: string;
-  content: Array<string>;
+  title?: string | null
+  subtitle?: string | null
+  contents?: string | Array<string> | null
 }
 
-function SimpleList({ title, content }:ISimpleList) {
+function SimpleList({ title = null, subtitle = null, contents = null }: ISimpleList) {
   return (
     <div>
-      <Typography variant="subtitle1" align='justify'>{title}</Typography>
       {
-        content.map((item, index) => {
-          let isLast = content.length === (index + 1) ? true : false
-          return <Typography key={`${title}-${index}`} variant="body2" align='justify' gutterBottom={isLast}>* {item}</Typography>
-        })
+        !title ? null : <Typography variant='h6' align='center'>{title}</Typography>
+      } {
+        !subtitle ? null : <Typography variant='body1' align='justify'>{subtitle}</Typography>
+      } {
+        !contents ? null
+          : typeof contents === 'string'
+            ? <Typography variant='body2' align='justify' gutterBottom={true}>{contents}</Typography>
+            : contents.map((item, index) => {
+              let isLast = contents.length === (index + 1) ? true : false
+              return <Typography key={`${title}-${index}`} variant='body2' align='left' gutterBottom={isLast}>* {item}</Typography>
+            })
       }
     </div>
-  );
+  )
 }
 
-export default SimpleList;
+export default SimpleList

@@ -1,13 +1,13 @@
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select'
+import MenuItem from '@material-ui/core/MenuItem'
+import FormControl from '@material-ui/core/FormControl'
 
 interface ISelectLang {
-  language: number;
-  change: Function;
+  language: number
+  change: Function
 }
 
-function SelectLang({ language, change }:ISelectLang) {
+function SelectLang({ language, change }: ISelectLang) {
   return (
     <div id='selectLang'>
       <FormControl fullWidth>
@@ -17,7 +17,7 @@ function SelectLang({ language, change }:ISelectLang) {
         </Select>
       </FormControl>
     </div>
-  );
+  )
 }
 
-export default SelectLang;
+export default SelectLang

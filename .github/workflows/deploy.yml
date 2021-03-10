@@ -1,4 +1,4 @@
-name: Deployment
+name: Publish
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
     - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Get repository
