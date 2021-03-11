@@ -1,11 +1,11 @@
 const { existsSync, mkdirSync } = require('fs')
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer'); // Dont remove this semicolon
 
 (async () => {
   const build = './build'
   if (await !existsSync(build)) await mkdirSync(build)
 
-  const pagePDF = { width: 1400, height: 980, pageRanges: '1-1', printBackground: true }
+  const pagePDF = { width: 1295, height: 850, pageRanges: '1-1', printBackground: true }
 
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()

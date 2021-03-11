@@ -20,7 +20,7 @@ jobs:
         key: npm-${{hashFiles('**/package-lock.json')}}
         restore-keys: npm-${{hashFiles('**/package-lock.json')}} npm-
     - name: NPM install
-      run: npm ci
+      run: npm ci --omit=dev --omit=optional
     - name: Build project
       run: npm run build
     - name: Run in background

@@ -5,6 +5,7 @@
   "editor.detectIndentation": false,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
+    "build/": true,
     "**/*.d.ts": true,
     "**/node_modules/": true
   },

@@ -1,22 +1,31 @@
-// import all from './all';
+import all from './all'
 
 const es = {
-  years: 'años',
-  objMain: 'Sobre Mi',
-  interests: 'Áreas de Interés',
-  projects: 'Sitios Web',
-  aboutMe: 'Me considero proactivo, entusiasta y autodidacta, soy alguien que ama aprender y busca nuevos retos y oportunidades siempre dando lo mejor para contribuir con mi experiencia en una compañia lider',
-  knowTitle: 'Conocimientos Técnicos',
-  codelleMain: 'Codellege de Softtek (Enero - Julio 2018)',
-  codelleText: 'Se llevan varias clases, una es Orientación donde vemos inteligencia emocional y resolución de conflictos, Emprendimiento donde se ven ideas y modelos de negocio, tambien Inglés y programación web donde se aprende HTML, CSS, JavaScript y NodeJS',
-  softtekMain: 'Desarrollador full-stack en Softtek (Julio 2018 - presente)',
-  softtekText: 'He tenido la oportunidad de trabajar en Softtek en muchos proyectos internos en equipo, analizando, desarrollando, entregando y dando soporte a aplicaciones web, mobiles y APIs usando Vue, React, MongoDB, Express, SPFX, GitLab CI, Compose, TypeScript...',
-  study: 'Cursos y Estudios',
-  careerMain: 'Ingeniería en Computación Administrativa, Universidad TecMilenio',
-  careerText: 'Enero 2018 - Diciembre 2021',
-  experience: 'Experiencia Laboral',
-  langText: 'Idiomas',
-  langOpts: ['Español (Nativo)', 'Inglés (Avanzado)']
+  inteMain: 'Áreas de interés',
+  inteOpts: [
+    'Automatización de procesos',
+    'Administración de servidores',
+    'Desarrollo full stack',
+    'Despliegue de aplicaciones',
+    'Algoritmos y optimización'
+  ],
+  i18nMain: 'Idiomas',
+  i18nOpts: [
+    'Español (nativo)',
+    'Inglés (avanzado)'
+  ],
+  webSites: 'Sitios web',
+  abmeMain: 'Sobre mi',
+  abmeText: 'Soy Enrique, un programador, me considero proactivo, entusiasta y autodidacta, soy alguien que ama aprender y busca nuevos retos y oportunidades siempre dando lo mejor para contribuir con mi experiencia en una compañia lider',
+  cdlgMain: `Curso de Codellege, Softtek (${all.cdlg})`,
+  cdlgText: 'Es un curso de 6 meses que ofrece Softtek a personas interesadas en entrar al mundo de la programación, ahí aprendí HTML, CSS, JS, JQuery, Bootstrap y NodeJS. Además también hay clases de diseño, emprendimiento e Inglés',
+  sftkMain: `Desarrollador full stack, Softtek (${all.sftk}e)`,
+  sftkText: 'He tenido la oportunidad de trabajar en varios proyectos internos y apoyar a otros equipos a crear y dar mantenimiento a aplicaciones web con React, Vue, JQuery, Bootstrap, MongoDB, NodeJS, ExpressJS, SPFX, SQL Server y TypeScript. También he apoyado en la creación de servidores en Azure con Nginx en contenedores de Docker con auto deploy desde GitLab CI',
+  estudios: 'Estudios',
+  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${all.tecm}e)`,
+  tecmText: 'Obtuve los certificados de "Gestión avanzada de tecnologías de la información" y "Productividad basada en herramientas tecnológicas" durante mis clases',
+  workExpe: 'Experiencia laboral',
+  techMain: 'Conocimientos técnicos'
 }
 
 export default es

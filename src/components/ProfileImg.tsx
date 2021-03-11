@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     }
   },
   bg: {
-    width: '95%'
+    width: '90%'
   },
   md: {
     width: '50%'

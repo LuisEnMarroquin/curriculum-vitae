@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "standard --fix",
-    "pdf": "nodemon pdf.js"
+    "pdf": "nodemon pdf.js --watch pdf.js --verbose"
   },
   "eslintConfig": {
     "extends": "react-app"
