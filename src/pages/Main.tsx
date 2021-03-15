@@ -1,7 +1,5 @@
 import { useState } from 'react'
-
-import en from 'i18n/en'
-import es from 'i18n/es'
+import { en, es } from 'i18n'
 
 import ButtonLink from 'components/ButtonLink'
 import MyFullName from 'components/MyFullName'
@@ -30,7 +28,7 @@ function Main() {
   const email = 'luis@marroquin.dev', phone = '154109681825'.split('').reverse().join('')
 
   return (
-    <Container className="mainContainer">
+    <Container id="mainContainer">
       <section>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={12} md={4}>
@@ -59,16 +57,15 @@ function Main() {
               <Grid item xs={12} sm={12} md={4}>
                 <SimpleList subtitle='Operating systems' contents={['Debian', 'Windows 10', 'Ubuntu Server']} />
                 <SimpleList subtitle='Programming languages' contents={['Java', 'Shell', 'Python', 'JavaScript', 'TypeScript']} />
-                <SimpleList subtitle='Currently learning' contents={['Rust', 'Golang']} />
+                <SimpleList subtitle='Databases' contents={['MongoDB', 'SQL Server']} />
               </Grid>
               <Grid item xs={12} sm={12} md={4}>
-                <SimpleList subtitle='Web frameworks' contents={['Vue', 'React', 'JQuery', 'Quasar', 'NodeJS', 'Bootstrap', 'ExpressJS', 'SPFx web part']} />
+                <SimpleList subtitle='Web frameworks' contents={['Vue', 'React', 'JQuery', 'Quasar', 'NodeJS', 'Bootstrap', 'ExpressJS', 'SharePoint Framework']} />
                 <SimpleList subtitle='Testing tools' contents={['Cypress', 'Puppeteer', 'SeleniumJS']} />
               </Grid>
               <Grid item xs={12} sm={12} md={4}>
                 <SimpleList subtitle='CI/CD' contents={['Jenkins', 'GitLab CI', 'GitHub Actions', 'Azure Pipelines']} />
                 <SimpleList subtitle='Containers' contents={['Docker', 'Compose']} />
-                <SimpleList subtitle='Databases' contents={['MongoDB', 'SQL Server']} />
               </Grid>
             </Grid>
           </Grid>

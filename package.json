@@ -16,14 +16,14 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3",
-    "serve-handler": "^6.1.3",
     "typescript": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "standard --fix",
-    "pdf": "nodemon pdf.js --watch pdf.js --verbose"
+    "serve": "nodemon server.js --watch server.js --verbose",
+    "pdf": "nodemon pdf.js --ext html,scss,ts,tsx,js --ignore build --verbose",
+    "lint": "standard --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
