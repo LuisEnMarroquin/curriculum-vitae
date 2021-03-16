@@ -1,9 +1,4 @@
-// const calculateAge = () => {
-//   var ageDfMs = Date.now() - new Date('1999-10-16').getTime()
-//   return new Date(ageDfMs).getUTCFullYear() - 1970
-// }
-
-// const edad = calculateAge()
+const edad = new Date(Date.now() - new Date('1999-10-16').getTime()).getUTCFullYear() - 1970
 const cdlg = '01/2018 - 06/2018'
 const tecm = '08/2018 - present'
 const sftk = '06/2018 - present'
@@ -15,7 +10,7 @@ export const en = {
   i18nOpts: ['Spanish (native)', 'English (advanced)'],
   webSites: 'Web sites',
   abmeMain: 'About me',
-  abmeText: 'I am Enrique, a programmer, I consider myself proactive, enthusiastic and self-taught, I am someone who loves to learn and seeks new challenges and opportunities always giving my best to contribute with my experience in a leading company',
+  abmeText: `My name is Luis Enrique, I am ${edad} and I am a proactive, enthusiastic and self-taught full stack developer. I really like learning new technologies and setting myself new challenges. I know how to plan projects from start to finish, work as a team and make the right decisions`,
   cdlgMain: `Codellege academy, Softtek (${cdlg})`,
   cdlgText: 'It is a 6 month course that Softtek offers to people interested in entering the world of programming, there I learned HTML, CSS, JS, JQuery, Bootstrap and NodeJS. In addition there are also classes in design, entrepreneurship and English',
   sftkMain: `Full stack developer, Softtek (${sftk})`,
@@ -34,7 +29,7 @@ export const es = {
   i18nOpts: ['Español (nativo)', 'Inglés (avanzado)'],
   webSites: 'Sitios web',
   abmeMain: 'Sobre mi',
-  abmeText: 'Soy Enrique, un programador, me considero proactivo, entusiasta y autodidacta, soy alguien que ama aprender y busca nuevos retos y oportunidades siempre dando lo mejor para contribuir con mi experiencia en una compañia lider',
+  abmeText: `Me llamo Luis Enrique, tengo ${edad} y soy un desarrollador full stack proactivo, entusiasta y autodidacta. Me gusta mucho aprender nuevas tecnologías y proponerme nuevos retos. Se como planificar proyectos de inicio a fin, trabajar en equipo y tomar decisiones acertadas`,
   cdlgMain: `Curso de Codellege, Softtek (${cdlg})`,
   cdlgText: 'Es un curso de 6 meses que ofrece Softtek a personas interesadas en entrar al mundo de la programación, ahí aprendí HTML, CSS, JS, JQuery, Bootstrap y NodeJS. Además también hay clases de diseño, emprendimiento e Inglés',
   sftkMain: `Desarrollador full stack, Softtek (${sftk}e)`,
