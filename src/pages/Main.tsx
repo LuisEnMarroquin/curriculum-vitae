@@ -60,7 +60,7 @@ function Main() {
                 <SimpleList subtitle='Databases' contents={['MongoDB', 'SQL Server']} />
               </Grid>
               <Grid item xs={12} sm={12} md={4}>
-                <SimpleList subtitle='Web frameworks' contents={['Vue', 'React', 'JQuery', 'Quasar', 'NodeJS', 'Bootstrap', 'ExpressJS', 'SharePoint Framework']} />
+                <SimpleList subtitle='Web frameworks' contents={['Vue', 'SPFx', 'React', 'JQuery', 'Quasar', 'NodeJS', 'Bootstrap', 'ExpressJS', 'WooCommerce']} />
                 <SimpleList subtitle='Testing tools' contents={['Cypress', 'Puppeteer', 'SeleniumJS']} />
               </Grid>
               <Grid item xs={12} sm={12} md={4}>
