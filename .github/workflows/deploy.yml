@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: npm-${{hashFiles('**/package-lock.json')}}
-        restore-keys: npm-${{hashFiles('**/package-lock.json')}}
+    # - uses: actions/cache@v2
+    #   with:
+    #     path: ~/.npm
+    #     key: npm-${{hashFiles('**/package-lock.json')}}
+    #     restore-keys: npm-${{hashFiles('**/package-lock.json')}}
     - name: NPM install
       run: npm ci --omit=dev --omit=optional
     - name: Build project
