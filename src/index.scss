@@ -14,13 +14,21 @@ body {
 }
 
 #mainContainer {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  section {
-    padding: 25px;
-    border-radius: 10px;
-    background-color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 600px) {
+  #mainContainer {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
+}
+
+#mainContainer > *:first-child {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: white;
 }
 
 #selectLang {

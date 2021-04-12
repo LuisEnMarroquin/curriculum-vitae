@@ -1,4 +1,4 @@
-import Divider from '@material-ui/core/Divider'
+// import Divider from '@material-ui/core/Divider'
 import { useTheme } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
@@ -12,7 +12,7 @@ function MyFullName({ showMobile = false }: { showMobile?: boolean }) {
       ? desktopSize ? null : fullName
       : !desktopSize ? null : <span>
         {fullName}
-        <Divider />
+        {/* <Divider /> */}
       </span>
   )
 }

@@ -7,13 +7,10 @@ const port = 3000
 
 if (existsSync(folder) && lstatSync(folder).isDirectory()) {
   createServer((req, res) => {
-
-    var file = req.url === '/' ? 'index.html' : req.url
-
     console.log('req', req.url)
-
-    var ext = String(extname(file)).toLowerCase()
-    var mimeTypes = {
+    const file = req.url === '/' ? 'index.html' : req.url
+    const extension = String(extname(file)).toLowerCase()
+    const mimeTypes = {
       '.html': 'text/html',
       '.js': 'text/javascript',
       '.css': 'text/css',
@@ -31,8 +28,7 @@ if (existsSync(folder) && lstatSync(folder).isDirectory()) {
       '.wasm': 'application/wasm'
     }
 
-    var contentType = mimeTypes[ext] || 'application/octet-stream'
-
+    const contentType = mimeTypes[extension] || 'application/octet-stream'
     readFile(`build/${file}`, (error, content) => {
       if (error) {
         console.error({ error })
@@ -41,7 +37,6 @@ if (existsSync(folder) && lstatSync(folder).isDirectory()) {
         res.end(content, 'utf-8')
       }
     })
-
   }).listen(port)
   console.log(`Visit http://localhost:${port}`)
 } else {

@@ -10,10 +10,11 @@ Just my CV using the following technologies:
 * NPM
 * Puppeteer
 * React
-* Sass
+* Scss
 * TypeScript
 
 ## Download PDF
 
 * [English](https://www.luismarroquin.com/cv-en.pdf)
 * [Spanish](https://www.luismarroquin.com/cv-es.pdf)
+* [All tar](https://www.luismarroquin.com/cv.tar.gz)

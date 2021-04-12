@@ -9,10 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Get repository
-      uses: actions/checkout@v2
-    - name: Restore cache
-      uses: actions/cache@v2
+    - uses: actions/checkout@v2
+    - uses: actions/cache@v2
       with:
         path: ~/.npm
         key: npm-${{hashFiles('**/package-lock.json')}}
@@ -30,8 +28,7 @@ jobs:
     - name: Create tar.gz
       run: tar -czvf cv.tar.gz cv-en.pdf cv-es.pdf
       working-directory: build/
-    - name: Publish to GH Pages
-      uses: LuisEnMarroquin/gh-pages-publish@v2.4.3
+    - uses: LuisEnMarroquin/gh-pages-publish@v2.4.3
       with:
         FOLDER: build
         SSHKEY: ${{ secrets.SSH }}

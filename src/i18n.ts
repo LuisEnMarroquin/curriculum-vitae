@@ -1,42 +1,66 @@
-const edad = new Date(Date.now() - new Date('1999-10-16').getTime()).getUTCFullYear() - 1970
+// const edad = new Date(Date.now() - new Date('1999-10-16').getTime()).getUTCFullYear() - 1970
 const cdlg = '01/2018 - 06/2018'
 const tecm = '08/2018 - present'
 const sftk = '06/2018 - present'
 
 export const en = {
+  // titles
   inteMain: 'Interest areas',
-  inteOpts: ['Process automation', 'Server management', 'Full stack development', 'Application deployments', 'Algorithms and optimization'],
   i18nMain: 'Languages',
-  i18nOpts: ['Spanish (native)', 'English (advanced)'],
   webSites: 'Web sites',
-  abmeMain: 'About me',
-  abmeText: `My name is Luis Enrique, I am ${edad} and I am a proactive, enthusiastic and self-taught full stack developer. I really like learning new technologies and setting myself new challenges. I know how to plan projects from start to finish, work as a team and make the right decisions`,
-  cdlgMain: `Codellege academy, Softtek (${cdlg})`,
-  cdlgText: 'It is a 6 month course that Softtek offers to people interested in entering the world of programming, there I learned HTML, CSS, JS, JQuery, Bootstrap and NodeJS. In addition there are also classes in design, entrepreneurship and English',
-  sftkMain: `Full stack developer, Softtek (${sftk})`,
-  sftkText: 'I have had the opportunity to work on various internal projects and support other teams building and maintaining web applications with React, Vue, JQuery, Bootstrap, MongoDB, NodeJS, ExpressJS, SPFX, SQL Server, and TypeScript. I have also supported the creation of servers in Azure with Nginx in Docker containers with auto deploy from GitLab CI',
   estudios: 'Education',
-  tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecm})`,
-  tecmText: 'I obtained the certificates of "Advanced management of information technologies" and "Productivity based on technological tools" during my classes',
+  certific: 'Courses and certificates',
   workExpe: 'Work experience',
   techMain: 'Technical expertise',
+  // content
+  inteOpts: ['Process automation', 'Server management', 'Full stack development', 'Application deployments', 'Algorithms and optimization'],
+  i18nOpts: ['Spanish (native)', 'English (advanced)'],
+  abmeText: 'Full stack developer focused on delivering clean, fast and secure applications, capable of following up a project from start to finish',
+  sftkMain: `Full stack developer at Softtek (${sftk})`,
+  sftkText: [
+    'Creation of SharePoint webparts using React, PnpJS and TypeScript',
+    'Manual or automated deployment of applications in Azure, SharePoint or servers with Ubuntu Server',
+    'Start and follow up of software development projects using Bootstrap, React, Vue, JQuery, NodeJS, SQL Server and MongoDB',
+    'Creation of Docker containers to handle the different environments of the projects',
+    'Process automation with Jenkins, Azure Pipelines and GitLab CI'
+  ],
+  tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecm})`,
+  // courses
+  cdlgMain: `Codellege academy by Softtek (${cdlg})`,
+  cdlgText: ['A 6 month course about web development: HTML, CSS, JavaScript, JQuery, Bootstrap and NodeJS'],
+  tecCsMn1: 'Advanced management of information technologies',
+  tecCsTx1: ['Certificate on the strategic use of information technologies in companies'],
+  tecCsMn2: 'Productivity based on technological tools',
+  tecCsTx2: ['Certificate about management of software projects and developing applications with Java']
 }
 
 export const es = {
+  // titles
   inteMain: 'Áreas de interés',
-  inteOpts: ['Automatización de procesos', 'Administración de servidores', 'Desarrollo full stack', 'Despliegue de aplicaciones', 'Algoritmos y optimización'],
   i18nMain: 'Idiomas',
-  i18nOpts: ['Español (nativo)', 'Inglés (avanzado)'],
   webSites: 'Sitios web',
-  abmeMain: 'Sobre mi',
-  abmeText: `Me llamo Luis Enrique, tengo ${edad} y soy un desarrollador full stack proactivo, entusiasta y autodidacta. Me gusta mucho aprender nuevas tecnologías y proponerme nuevos retos. Se como planificar proyectos de inicio a fin, trabajar en equipo y tomar decisiones acertadas`,
-  cdlgMain: `Curso de Codellege, Softtek (${cdlg})`,
-  cdlgText: 'Es un curso de 6 meses que ofrece Softtek a personas interesadas en entrar al mundo de la programación, ahí aprendí HTML, CSS, JS, JQuery, Bootstrap y NodeJS. Además también hay clases de diseño, emprendimiento e Inglés',
-  sftkMain: `Desarrollador full stack, Softtek (${sftk}e)`,
-  sftkText: 'He tenido la oportunidad de trabajar en varios proyectos internos y apoyar a otros equipos a crear y dar mantenimiento a aplicaciones web con React, Vue, JQuery, Bootstrap, MongoDB, NodeJS, ExpressJS, SPFX, SQL Server y TypeScript. También he apoyado en la creación de servidores en Azure con Nginx en contenedores de Docker con auto deploy desde GitLab CI',
   estudios: 'Estudios',
-  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecm}e)`,
-  tecmText: 'Obtuve los certificados de "Gestión avanzada de tecnologías de la información" y "Productividad basada en herramientas tecnológicas" durante mis clases',
+  certific: 'Cursos y certificados',
   workExpe: 'Experiencia laboral',
-  techMain: 'Conocimientos técnicos'
+  techMain: 'Conocimientos técnicos',
+  // content
+  inteOpts: ['Automatización de procesos', 'Administración de servidores', 'Desarrollo full stack', 'Despliegue de aplicaciones', 'Algoritmos y optimización'],
+  i18nOpts: ['Español (nativo)', 'Inglés (avanzado)'],
+  abmeText: 'Desarrollador full stack enfocado en entregar aplicaciones limpias, rápidas y seguras, capaz de darle seguimiento al proyecto de principio a fin',
+  sftkMain: `Desarrollador full stack en Softtek (${sftk}e)`,
+  sftkText: [
+    'Creación de webparts de SharePoint usando React, PnpJS y TypeScript',
+    'Despliegue manual o automatizado de aplicaciones en Azure, SharePoint o en servidores con Ubuntu Server',
+    'Inicio y seguimiento de proyectos de desarrollo de software usando Bootstrap, React, Vue, JQuery, NodeJS, SQL Server y MongoDB',
+    'Creación de contenedores de Docker para manejar los distintos ambientes de los proyectos',
+    'Automatización de procesos con Jenkins, Azure Pipelines y GitLab CI'
+  ],
+  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecm}e)`,
+  // courses
+  cdlgMain: `Curso de Codellege por Softtek (${cdlg})`,
+  cdlgText: ['Un curso de 6 meses sobre desarrollo web: HTML, CSS, JavaScript, JQuery, Bootstrap y NodeJS'],
+  tecCsMn1: 'Gestión avanzada de tecnologías de la información',
+  tecCsTx1: ['Certificado sobre el uso estratégico de las tecnologías de la información en las empresas'],
+  tecCsMn2: 'Productividad basada en herramientas tecnológicas',
+  tecCsTx2: ['Certificado sobre la administración de proyectos de software y el desarrollo de aplicaciones con Java']
 }
