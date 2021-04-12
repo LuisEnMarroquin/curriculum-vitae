@@ -1,5 +1,9 @@
 {
-  "private": true,
+  "name": "curriculum-vitae",
+  "author": "LuisEnMarroquin <luis@marroquin.dev>",
+  "description": "React app with TypeScript, Scss and Material UI",
+  "version": "1.0.0",
+  "license": "MIT",
   "homepage": "/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
