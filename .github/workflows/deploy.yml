@@ -18,7 +18,6 @@ jobs:
         path: ~/.npm
         key: npm-${{hashFiles('**/package-lock.json')}}
         restore-keys: npm-${{hashFiles('**/package-lock.json')}}
-    - run: npm install
     - name: NPM install
       run: npm ci --omit=dev --omit=optional
     - name: Build project
