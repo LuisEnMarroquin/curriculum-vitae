@@ -67,8 +67,8 @@ function Main() {
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
               <SimpleList subtitle='Testing' contents={['Cypress', 'Puppeteer', 'SeleniumJS']} />
-              <SimpleList subtitle='Databases' contents={['MongoDB', 'SQL Server']} />
-              <SimpleList subtitle='OS' contents={['Debian', 'Ubuntu Server']} />
+              <SimpleList subtitle='Databases' contents={['MySQL', 'MongoDB', 'SQL Server']} />
+              <SimpleList subtitle='OS' contents={['Ubuntu Server']} />
             </Grid>
           </Grid>
         </Grid>
