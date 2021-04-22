@@ -46,7 +46,7 @@ export const es = {
   // content
   inteOpts: ['Automatización de procesos', 'Administración de servidores', 'Desarrollo full stack', 'Despliegue de aplicaciones', 'Algoritmos y optimización'],
   i18nOpts: ['Español (nativo)', 'Inglés (avanzado)'],
-  abmeText: 'Desarrollador full stack enfocado en entregar aplicaciones limpias, rápidas y seguras, capaz de darle seguimiento al proyecto de principio a fin',
+  abmeText: 'Desarrollador full stack enfocado en entregar aplicaciones limpias, rápidas y seguras, capaz de darle seguimiento al proyecto de inicio a fin',
   sftkMain: `Desarrollador full stack en Softtek (${sftk}e)`,
   sftkText: [
     'Creación de webparts de SharePoint usando React, PnpJS y TypeScript',
