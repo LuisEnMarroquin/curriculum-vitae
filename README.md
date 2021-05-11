@@ -2,6 +2,7 @@
 
 Just my CV using the following technologies:
 
+* Create React App
 * GitHub Actions
 * GitHub Pages
 * JavaScript
@@ -10,11 +11,11 @@ Just my CV using the following technologies:
 * NPM
 * Puppeteer
 * React
-* Scss
+* SCSS
 * TypeScript
 
 ## Download PDF
 
 * [English](https://www.luismarroquin.com/cv-en.pdf)
 * [Spanish](https://www.luismarroquin.com/cv-es.pdf)
-* [All tar](https://www.luismarroquin.com/cv.tar.gz)
+* [Both in tar.gz](https://www.luismarroquin.com/cv.tar.gz)

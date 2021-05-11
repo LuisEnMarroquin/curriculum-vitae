@@ -1,30 +1,29 @@
 {
-  "name": "curriculum-vitae",
-  "author": "LuisEnMarroquin <luis@marroquin.dev>",
-  "description": "React app with TypeScript, Scss and Material UI",
-  "version": "1.0.0",
-  "license": "MIT",
+  "private": true,
   "homepage": "/",
   "dependencies": {
-    "@babel/core": "^7.13.15",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "@types/node": "^14.14.37",
+    "@types/node": "^15.0.2",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
-    "node-sass": "^5.0.0",
-    "puppeteer": "^8.0.0",
+    "node-sass": "^6.0.0",
+    "puppeteer": "^9.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
     "typescript": "^4.2.4"
   },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "ts-standard": "^10.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "serve": "nodemon server.js --watch server.js --verbose",
-    "pdf": "nodemon pdf.js --ext html,scss,ts,tsx,js --ignore build --verbose",
-    "lint": "standard --fix"
+    "lint": "standard --fix && ts-standard --fix || true",
+    "server": "nodemon server.js --watch server.js --verbose",
+    "seePDF": "nodemon seePDF.js --ext html,scss,ts,tsx,js --ignore build --verbose"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +38,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "ts-standard": {
+    "ignore": [
+      "build/",
+      "src/react-app-env.d.ts"
     ]
   }
 }

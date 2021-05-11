@@ -1,12 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
 import 'index.scss'
+import Home from './Home'
+import { render } from 'react-dom'
 
-import Main from 'pages/Main'
-
-ReactDOM.render(
-  <React.Fragment>
-    <Main />
-  </React.Fragment>,
+render(
+  <>
+    <Home />
+  </>,
   document.getElementById('root')
 )

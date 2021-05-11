@@ -1,19 +1,23 @@
-// import Divider from '@material-ui/core/Divider'
+import { ReactElement } from 'react'
 import { useTheme } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
+import { Divider, Typography, useMediaQuery } from '@material-ui/core'
 
-function MyFullName({ showMobile = false }: { showMobile?: boolean }) {
+function MyFullName ({ about, showMobile = false }: { about: string, showMobile?: boolean }): ReactElement|null {
   const theme = useTheme()
   const desktopSize = useMediaQuery(theme.breakpoints.up('md'))
-  const fullName = <Typography variant="h5" align='center' gutterBottom>Luis Enrique Marroquín González</Typography>
+  const fullName = <section>
+    <Typography variant='h5' align='center' gutterBottom>Luis Enrique Marroquín González</Typography>
+    <Typography variant='body2' align='justify' gutterBottom>{about}</Typography>
+    <Divider />
+  </section>
   return (
     showMobile
-      ? desktopSize ? null : fullName
-      : !desktopSize ? null : <span>
-        {fullName}
-        {/* <Divider /> */}
-      </span>
+      ? desktopSize
+        ? null
+        : fullName
+      : !desktopSize
+        ? null
+        : fullName
   )
 }
 

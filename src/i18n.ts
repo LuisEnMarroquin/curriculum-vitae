@@ -1,10 +1,8 @@
 // const edad = new Date(Date.now() - new Date('1999-10-16').getTime()).getUTCFullYear() - 1970
-const cdlg = '01/2018 - 06/2018'
 const tecm = '08/2018 - present'
 const sftk = '06/2018 - present'
 
 export const en = {
-  // titles
   inteMain: 'Interest areas',
   i18nMain: 'Languages',
   webSites: 'Web sites',
@@ -12,11 +10,20 @@ export const en = {
   certific: 'Courses and certificates',
   workExpe: 'Work experience',
   techMain: 'Technical expertise',
-  // content
-  inteOpts: ['Process automation', 'Server management', 'Full stack development', 'Application deployments', 'Algorithms and optimization'],
-  i18nOpts: ['Spanish (native)', 'English (advanced)'],
-  abmeText: 'Full stack developer focused on delivering clean, fast and secure applications, capable of following up a project from start to finish',
-  sftkMain: `Full stack developer at Softtek (${sftk})`,
+
+  inteOpts: [
+    'Process automation',
+    'Server management',
+    'Full Stack development',
+    'Application deployments',
+    'Algorithms and optimization'
+  ],
+  i18nOpts: [
+    'Spanish (native)',
+    'English (advanced)'
+  ],
+  abmeText: 'Full Stack developer focused on delivering clean, fast and secure applications',
+  sftkMain: `Full Stack developer and DevOps engineer at Softtek (${sftk})`,
   sftkText: [
     'Creation of SharePoint webparts using React, PnpJS and TypeScript',
     'Manual or automated deployment of applications in Azure, SharePoint or servers with Ubuntu Server',
@@ -25,17 +32,21 @@ export const en = {
     'Process automation with Jenkins, Azure Pipelines and GitLab CI'
   ],
   tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecm})`,
-  // courses
-  cdlgMain: `Codellege academy by Softtek (${cdlg})`,
-  cdlgText: ['A 6 month course about web development: HTML, CSS, JavaScript, JQuery, Bootstrap and NodeJS'],
+  cdlgMain: `Codellege academy by Softtek`,
+  cdlgText: [
+    'A 6 month course about HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB and NodeJS'
+  ],
   tecCsMn1: 'Advanced management of information technologies',
-  tecCsTx1: ['Certificate on the strategic use of information technologies in companies'],
+  tecCsTx1: [
+    'Certificate on the strategic use of information technologies in business'
+  ],
   tecCsMn2: 'Productivity based on technological tools',
-  tecCsTx2: ['Certificate about management of software projects and developing applications with Java']
+  tecCsTx2: [
+    'Certificate about management of software projects and developing applications with Java'
+  ]
 }
 
 export const es = {
-  // titles
   inteMain: 'Áreas de interés',
   i18nMain: 'Idiomas',
   webSites: 'Sitios web',
@@ -43,11 +54,19 @@ export const es = {
   certific: 'Cursos y certificados',
   workExpe: 'Experiencia laboral',
   techMain: 'Conocimientos técnicos',
-  // content
-  inteOpts: ['Automatización de procesos', 'Administración de servidores', 'Desarrollo full stack', 'Despliegue de aplicaciones', 'Algoritmos y optimización'],
-  i18nOpts: ['Español (nativo)', 'Inglés (avanzado)'],
-  abmeText: 'Desarrollador full stack enfocado en entregar aplicaciones limpias, rápidas y seguras, capaz de darle seguimiento al proyecto de inicio a fin',
-  sftkMain: `Desarrollador full stack en Softtek (${sftk}e)`,
+  inteOpts: [
+    'Automatización de procesos',
+    'Administración de servidores',
+    'Desarrollo Full Stack',
+    'Despliegue de aplicaciones',
+    'Algoritmos y optimización'
+  ],
+  i18nOpts: [
+    'Español (nativo)',
+    'Inglés (avanzado)'
+  ],
+  abmeText: 'Desarrollador Full Stack enfocado en entregar aplicaciones limpias, rápidas y seguras',
+  sftkMain: `Desarrollador Full Stack e ingeniero DevOps en Softtek (${sftk}e)`,
   sftkText: [
     'Creación de webparts de SharePoint usando React, PnpJS y TypeScript',
     'Despliegue manual o automatizado de aplicaciones en Azure, SharePoint o en servidores con Ubuntu Server',
@@ -56,11 +75,16 @@ export const es = {
     'Automatización de procesos con Jenkins, Azure Pipelines y GitLab CI'
   ],
   tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecm}e)`,
-  // courses
-  cdlgMain: `Curso de Codellege por Softtek (${cdlg})`,
-  cdlgText: ['Un curso de 6 meses sobre desarrollo web: HTML, CSS, JavaScript, JQuery, Bootstrap y NodeJS'],
+  cdlgMain: `Curso de Codellege por Softtek`,
+  cdlgText: [
+    'Un curso de 6 meses sobre HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB y NodeJS'
+  ],
   tecCsMn1: 'Gestión avanzada de tecnologías de la información',
-  tecCsTx1: ['Certificado sobre el uso estratégico de las tecnologías de la información en las empresas'],
+  tecCsTx1: [
+    'Certificado sobre el uso estratégico de las tecnologías de la información en las empresas'
+  ],
   tecCsMn2: 'Productividad basada en herramientas tecnológicas',
-  tecCsTx2: ['Certificado sobre la administración de proyectos de software y el desarrollo de aplicaciones con Java']
+  tecCsTx2: [
+    'Certificado sobre la administración de proyectos de software y el desarrollo de aplicaciones con Java'
+  ]
 }
