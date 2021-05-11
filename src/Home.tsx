@@ -52,7 +52,7 @@ function Home (): ReactElement {
           <SimpleList subtitle={lang.tecCsMn1} contents={lang.tecCsTx1} />
           <SimpleList subtitle={lang.tecCsMn2} contents={lang.tecCsTx2} hr />
           <SimpleList title={lang.estudios} />
-          <SimpleList subtitle={lang.tecmMain} hr />
+          <SimpleList subtitle={lang.tecmMain} contents={lang.tecmText} hr />
           <SimpleList title={lang.workExpe} />
           <SimpleList subtitle={lang.sftkMain} contents={lang.sftkText} hr />
           <SimpleList title={lang.techMain} />

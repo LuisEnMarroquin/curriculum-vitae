@@ -10,7 +10,6 @@ export const en = {
   certific: 'Courses and certificates',
   workExpe: 'Work experience',
   techMain: 'Technical expertise',
-
   inteOpts: [
     'Process automation',
     'Server management',
@@ -22,25 +21,28 @@ export const en = {
     'Spanish (native)',
     'English (advanced)'
   ],
-  abmeText: 'Full Stack developer focused on delivering clean, fast and secure applications',
+  abmeText: 'Full Stack developer, Docker and DevOps enthusiast focused on delivering clean, fast and secure applications',
   sftkMain: `Full Stack developer and DevOps engineer at Softtek (${sftk})`,
   sftkText: [
-    'Creation of SharePoint webparts using React, PnpJS and TypeScript',
-    'Manual or automated deployment of applications in Azure, SharePoint or servers with Ubuntu Server',
-    'Start and follow up of software development projects using Bootstrap, React, Vue, JQuery, NodeJS, SQL Server and MongoDB',
-    'Creation of Docker containers to handle the different environments of the projects',
-    'Process automation with Jenkins, Azure Pipelines and GitLab CI'
+    'Frontend development using Bootstrap, JQuery, Vue, React, SCSS, Stylus, SPFX, TypeScript, Quasar y Material-UI',
+    'Backend creation with NodeJS, using Express, JWT, TypeScript and Mongoose, with databases MongoDB and SQL Server',
+    'Process automation and multi-environment application deployment using Jenkins, Azure Pipelines and GitLab CI',
+    'Basic usage of SharePoint lists and permissions, as well as using the Azure Portal to create or edit services',
+    'Server management with Ubuntu Server with Nginx and multiple containerized applications in Docker'
   ],
   tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecm})`,
-  cdlgMain: `Codellege academy by Softtek`,
+  tecmText: [
+    'Design algorithms to create systems capable of processing and transforming information, managing and analyzing data from different areas, using software tools that allow business process reengineering'
+  ],
+  cdlgMain: 'Codellege academy by Softtek',
   cdlgText: [
     'A 6 month course about HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB and NodeJS'
   ],
-  tecCsMn1: 'Advanced management of information technologies',
+  tecCsMn1: 'Advanced management of information technologies by TecMilenio',
   tecCsTx1: [
     'Certificate on the strategic use of information technologies in business'
   ],
-  tecCsMn2: 'Productivity based on technological tools',
+  tecCsMn2: 'Productivity based on technological tools by TecMilenio',
   tecCsTx2: [
     'Certificate about management of software projects and developing applications with Java'
   ]
@@ -65,25 +67,28 @@ export const es = {
     'Español (nativo)',
     'Inglés (avanzado)'
   ],
-  abmeText: 'Desarrollador Full Stack enfocado en entregar aplicaciones limpias, rápidas y seguras',
+  abmeText: 'Desarrollador Full Stack, entusiasta de Docker y DevOps enfocado en entregar aplicaciones limpias, rápidas y seguras',
   sftkMain: `Desarrollador Full Stack e ingeniero DevOps en Softtek (${sftk}e)`,
   sftkText: [
-    'Creación de webparts de SharePoint usando React, PnpJS y TypeScript',
-    'Despliegue manual o automatizado de aplicaciones en Azure, SharePoint o en servidores con Ubuntu Server',
-    'Inicio y seguimiento de proyectos de desarrollo de software usando Bootstrap, React, Vue, JQuery, NodeJS, SQL Server y MongoDB',
-    'Creación de contenedores de Docker para manejar los distintos ambientes de los proyectos',
-    'Automatización de procesos con Jenkins, Azure Pipelines y GitLab CI'
+    'Desarrollo frontend usando Bootstrap, JQuery, Vue, React, SCSS, Stylus, SPFX, TypeScript, Quasar y Material-UI',
+    'Creación de backends con NodeJS, usando Express, JWT, TypeScript y Mongoose, con bases de datos MongoDB y SQL Server',
+    'Automatización de procesos y despliegue de aplicaciones multi ambiente usando Jenkins, Azure Pipelines y GitLab CI',
+    'Manejo básico de permisos y listas de SharePoint, así como uso del Portal de Azure para crear o editar servicios',
+    'Administración de servidores con Ubuntu Server con Nginx y multiples aplicaciones en contenedores en Docker'
   ],
   tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecm}e)`,
-  cdlgMain: `Curso de Codellege por Softtek`,
+  tecmText: [
+    'Diseñar algoritmos para crear sistemas capaces de procesar y transformar información, administrar y analizar datos de distintas áreas, utilizando herramientas de software que permitan la reingeniería de procesos de negocios'
+  ],
+  cdlgMain: 'Curso de Codellege por Softtek',
   cdlgText: [
     'Un curso de 6 meses sobre HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB y NodeJS'
   ],
-  tecCsMn1: 'Gestión avanzada de tecnologías de la información',
+  tecCsMn1: 'Gestión avanzada de tecnologías de la información por TecMilenio',
   tecCsTx1: [
     'Certificado sobre el uso estratégico de las tecnologías de la información en las empresas'
   ],
-  tecCsMn2: 'Productividad basada en herramientas tecnológicas',
+  tecCsMn2: 'Productividad basada en herramientas tecnológicas por TecMilenio',
   tecCsTx2: [
     'Certificado sobre la administración de proyectos de software y el desarrollo de aplicaciones con Java'
   ]

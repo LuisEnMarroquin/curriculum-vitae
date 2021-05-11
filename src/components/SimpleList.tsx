@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   }
 })
 
-function SimpleList({ title = '', subtitle = '', contents = [], hr = false }: ISimpleList): ReactElement {
+function SimpleList ({ title = '', subtitle = '', contents = [], hr = false }: ISimpleList): ReactElement {
   const classes = useStyles()
   return (
     <div>
