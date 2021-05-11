@@ -49,8 +49,7 @@ function Home (): ReactElement {
           <MyFullName about={lang.abmeText} />
           <SimpleList title={lang.certific} />
           <SimpleList subtitle={lang.cdlgMain} contents={lang.cdlgText} />
-          <SimpleList subtitle={lang.tecCsMn1} contents={lang.tecCsTx1} />
-          <SimpleList subtitle={lang.tecCsMn2} contents={lang.tecCsTx2} hr />
+          <SimpleList subtitle={lang.tCerMain} contents={lang.tCerText} hr />
           <SimpleList title={lang.estudios} />
           <SimpleList subtitle={lang.tecmMain} contents={lang.tecmText} hr />
           <SimpleList title={lang.workExpe} />

@@ -32,18 +32,14 @@ export const en = {
   ],
   tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecm})`,
   tecmText: [
-    'Design algorithms to create systems capable of processing and transforming information, managing and analyzing data from different areas, using software tools that allow business process reengineering'
+    'Design algorithms to create systems capable of processing and transforming information, managing and analyzing data'
   ],
   cdlgMain: 'Codellege academy by Softtek',
   cdlgText: [
     'A 6 month course about HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB and NodeJS'
   ],
-  tecCsMn1: 'Advanced management of information technologies by TecMilenio',
-  tecCsTx1: [
-    'Certificate on the strategic use of information technologies in business'
-  ],
-  tecCsMn2: 'Productivity based on technological tools by TecMilenio',
-  tecCsTx2: [
+  tCerMain: 'Productivity based on technological tools by TecMilenio',
+  tCerText: [
     'Certificate about management of software projects and developing applications with Java'
   ]
 }
@@ -78,18 +74,14 @@ export const es = {
   ],
   tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecm}e)`,
   tecmText: [
-    'Diseñar algoritmos para crear sistemas capaces de procesar y transformar información, administrar y analizar datos de distintas áreas, utilizando herramientas de software que permitan la reingeniería de procesos de negocios'
+    'Diseñar algoritmos para crear sistemas capaces de procesar y transformar información, administrar y analizar datos de distintas áreas'
   ],
   cdlgMain: 'Curso de Codellege por Softtek',
   cdlgText: [
     'Un curso de 6 meses sobre HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB y NodeJS'
   ],
-  tecCsMn1: 'Gestión avanzada de tecnologías de la información por TecMilenio',
-  tecCsTx1: [
-    'Certificado sobre el uso estratégico de las tecnologías de la información en las empresas'
-  ],
-  tecCsMn2: 'Productividad basada en herramientas tecnológicas por TecMilenio',
-  tecCsTx2: [
+  tCerMain: 'Productividad basada en herramientas tecnológicas por TecMilenio',
+  tCerText: [
     'Certificado sobre la administración de proyectos de software y el desarrollo de aplicaciones con Java'
   ]
 }
