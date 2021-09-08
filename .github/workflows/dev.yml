@@ -1,4 +1,4 @@
-name: DEV
+name: Pipeline Dev
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
     - name: Build project
       run: npm run build
     - name: Run in background
-      run: node start-server.js &
+      run: node server.js &
     - name: Copy CNAME
       run: cp CNAME build/CNAME
     - name: Create PDFs
