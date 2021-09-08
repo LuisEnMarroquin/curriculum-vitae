@@ -23,11 +23,11 @@ jobs:
     - name: Build project
       run: npm run build
     - name: Run in background
-      run: node server.js &
+      run: node start-server.js &
     - name: Copy CNAME
       run: cp CNAME build/CNAME
     - name: Create PDFs
-      run: node seePDF.js
+      run: node genPDF.js
     - name: Create tar.gz
       run: tar -czvf cv.tar.gz cv-en.pdf cv-es.pdf
       working-directory: build/

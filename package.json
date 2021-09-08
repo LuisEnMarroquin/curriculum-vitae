@@ -17,9 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "standard --fix && ts-standard --fix || true",
-    "server": "nodemon server.js --watch server.js --verbose",
-    "seePDF": "nodemon seePDF.js --ext html,scss,ts,tsx,js --ignore build --verbose"
+    "start-server": "nodemon server.js --watch server.js --verbose",
+    "generate-pdf": "nodemon genPDF.js --ext html,scss,ts,tsx,js --ignore build --verbose"
   },
   "eslintConfig": {
     "extends": "react-app"

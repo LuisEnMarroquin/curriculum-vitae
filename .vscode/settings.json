@@ -1,0 +1,28 @@
+{
+  "editor.tabSize": 2,
+  "standard.enable": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "json.maxItemsComputed": 2500,
+  "standard.autoFixOnSave": true,
+  "files.trimFinalNewlines": true,
+  "standard.engine": "ts-standard",
+  "files.insertFinalNewline": true,
+  "editor.detectIndentation": false,
+  "javascript.validate.enable": false,
+  "files.trimTrailingWhitespace": true,
+  "standard.treatErrorsAsWarnings": true,
+  "editor.maxTokenizationLineLength": 5000,
+  "editor.defaultFormatter": "standard.vscode-standard",
+  "search.exclude": {
+    "**/*.svg": true,
+    "**/package-lock.json": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.directory": true,
+    "**/desktop.ini": true,
+    "**/node_modules/": true,
+    "src/react-app-env.d.ts": true
+  }
+}

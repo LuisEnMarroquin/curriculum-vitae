@@ -1,6 +1,6 @@
-// const edad = new Date(Date.now() - new Date('1999-10-16').getTime()).getUTCFullYear() - 1970
-const tecm = '08/2018 - present'
-const sftk = '06/2018 - present'
+const tecTime = '08/2018 - 07/2021'
+const stkTime = '06/2018 - 05/2021'
+const arkTime = '05/2021 - present'
 
 export const en = {
   inteMain: 'Interest areas',
@@ -13,7 +13,7 @@ export const en = {
   inteOpts: [
     'Process automation',
     'Server management',
-    'Full Stack development',
+    'Full stack development',
     'Application deployments',
     'Algorithms and optimization'
   ],
@@ -21,26 +21,27 @@ export const en = {
     'Spanish (native)',
     'English (advanced)'
   ],
-  abmeText: 'Full Stack developer, Docker and DevOps enthusiast focused on delivering clean, fast and secure applications',
-  sftkMain: `Full Stack developer and DevOps engineer at Softtek (${sftk})`,
+  abmeText: 'Full stack developer, Docker and DevOps enthusiast focused on delivering clean, fast and secure applications',
+  sftkMain: `Full stack developer and DevOps engineer at Softtek (${stkTime})`,
   sftkText: [
-    'Frontend development using Bootstrap, JQuery, Vue, React, SCSS, Stylus, SPFX, TypeScript, Quasar y Material-UI',
-    'Backend creation with NodeJS, using Express, JWT, TypeScript and Mongoose, with databases MongoDB and SQL Server',
+    'Frontend development using Bootstrap, JQuery, Vue, React, SCSS, Stylus, SPFX, TypeScript, Quasar and Material',
+    'Backend creation with NodeJS, using Express, JWT, TypeScript and Mongoose, with databases mostly in MongoDB',
     'Process automation and multi-environment application deployment using Jenkins, Azure Pipelines and GitLab CI',
-    'Basic usage of SharePoint lists and permissions, as well as using the Azure Portal to create or edit services',
-    'Server management with Ubuntu Server with Nginx and multiple containerized applications in Docker'
+    'Server management with Ubuntu Server with Nginx and multiple containerized applications with Docker Compose'
   ],
-  tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecm})`,
+  arkuMain: `Full stack developer and DevOps engineer at Arkus Nexus (${arkTime})`,
+  arkuText: [
+    'Frontend development using React, React Context, TypeScript, Styled Components and Material',
+    'Backend creation with NodeJS, usando Express, Multer, TypeScript and Mongoose',
+    'Deploy automation to S3, ECR and ECS using Bitbucket Pipelines'
+  ],
+  tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecTime})`,
   tecmText: [
     'Design algorithms to create systems capable of processing and transforming information, managing and analyzing data'
   ],
   cdlgMain: 'Codellege academy by Softtek',
   cdlgText: [
     'A 6 month course about HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB and NodeJS'
-  ],
-  tCerMain: 'Productivity based on technological tools by TecMilenio',
-  tCerText: [
-    'Certificate about management of software projects and developing applications with Java'
   ]
 }
 
@@ -55,7 +56,7 @@ export const es = {
   inteOpts: [
     'Automatización de procesos',
     'Administración de servidores',
-    'Desarrollo Full Stack',
+    'Desarrollo Full stack',
     'Despliegue de aplicaciones',
     'Algoritmos y optimización'
   ],
@@ -63,25 +64,26 @@ export const es = {
     'Español (nativo)',
     'Inglés (avanzado)'
   ],
-  abmeText: 'Desarrollador Full Stack, entusiasta de Docker y DevOps enfocado en entregar aplicaciones limpias, rápidas y seguras',
-  sftkMain: `Desarrollador Full Stack e ingeniero DevOps en Softtek (${sftk}e)`,
+  abmeText: 'Desarrollador Full stack, entusiasta de Docker y DevOps enfocado en entregar aplicaciones limpias, rápidas y seguras',
+  sftkMain: `Desarrollador Full stack e ingeniero DevOps en Softtek (${stkTime})`,
   sftkText: [
-    'Desarrollo frontend usando Bootstrap, JQuery, Vue, React, SCSS, Stylus, SPFX, TypeScript, Quasar y Material-UI',
-    'Creación de backends con NodeJS, usando Express, JWT, TypeScript y Mongoose, con bases de datos MongoDB y SQL Server',
+    'Desarrollo frontend usando Bootstrap, JQuery, Vue, React, SCSS, Stylus, SPFX, TypeScript, Quasar y Material',
+    'Creación de backends con NodeJS, usando Express, JWT, TypeScript y Mongoose, con bases de datos principalmente en MongoDB',
     'Automatización de procesos y despliegue de aplicaciones multi ambiente usando Jenkins, Azure Pipelines y GitLab CI',
-    'Manejo básico de permisos y listas de SharePoint, así como uso del Portal de Azure para crear o editar servicios',
-    'Administración de servidores con Ubuntu Server con Nginx y multiples aplicaciones en contenedores en Docker'
+    'Administración de servidores con Ubuntu Server con Nginx y multiples aplicaciones en contenedores con Docker Compose'
   ],
-  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecm}e)`,
+  arkuMain: `Desarrollador Full stack e ingeniero DevOps en Arkus Nexus (${stkTime})`,
+  arkuText: [
+    'Desarrollo frontend using React, React Context, TypeScript, Styled Components y Material',
+    'Creación de backends con NodeJS, usando Express, Multer, TypeScript y Mongoose',
+    'Automatización de deploys a S3, ECR y ECS usando Bitbucket Pipelines'
+  ],
+  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${arkTime})`,
   tecmText: [
     'Diseñar algoritmos para crear sistemas capaces de procesar y transformar información, administrar y analizar datos de distintas áreas'
   ],
   cdlgMain: 'Curso de Codellege por Softtek',
   cdlgText: [
     'Un curso de 6 meses sobre HTML, CSS, JavaScript, JQuery, Bootstrap, MongoDB y NodeJS'
-  ],
-  tCerMain: 'Productividad basada en herramientas tecnológicas por TecMilenio',
-  tCerText: [
-    'Certificado sobre la administración de proyectos de software y el desarrollo de aplicaciones con Java'
   ]
 }

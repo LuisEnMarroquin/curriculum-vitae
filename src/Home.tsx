@@ -34,9 +34,9 @@ function Home (): ReactElement {
         <Grid item xs={12} sm={12} md={3}>
           <ProfileImg />
           <MyFullName about={lang.abmeText} showMobile />
-          <ButtonLink href={'https://wa.me/' + phone} text={'+' + phone} icon={<WhatsAppIcon />} />
+          <ButtonLink href={`https://wa.me/${phone}`} text={`+${phone}`} icon={<WhatsAppIcon />} />
           <ButtonLink href='https://www.google.com.mx/maps/place/Monterrey,+Nuevo+Leon' text='Monterrey, México' icon={<HomeIcon />} />
-          <ButtonLink href={'mailto:' + email} text={email} icon={<EmailIcon />} />
+          <ButtonLink href={`mailto:${email}`} text={email} icon={<EmailIcon />} />
           <SimpleList title={lang.inteMain} contents={lang.inteOpts} />
           <SimpleList title={lang.i18nMain} contents={lang.i18nOpts} />
           <SimpleList title={lang.webSites} />
@@ -48,26 +48,49 @@ function Home (): ReactElement {
         <Grid item xs={12} sm={12} md={9}>
           <MyFullName about={lang.abmeText} />
           <SimpleList title={lang.certific} />
-          <SimpleList subtitle={lang.cdlgMain} contents={lang.cdlgText} />
-          <SimpleList subtitle={lang.tCerMain} contents={lang.tCerText} hr />
+          <SimpleList subtitle={lang.cdlgMain} contents={lang.cdlgText} hr />
           <SimpleList title={lang.estudios} />
           <SimpleList subtitle={lang.tecmMain} contents={lang.tecmText} hr />
           <SimpleList title={lang.workExpe} />
-          <SimpleList subtitle={lang.sftkMain} contents={lang.sftkText} hr />
+          <SimpleList subtitle={lang.sftkMain} contents={lang.sftkText} />
+          <SimpleList subtitle={lang.arkuMain} contents={lang.arkuText} hr />
           <SimpleList title={lang.techMain} />
           <Grid container spacing={2}>
             <Grid item xs={12} sm={12} md={4}>
-              <SimpleList subtitle='Languages' contents={['Java', 'Shell', 'Python', 'JavaScript', 'TypeScript']} />
-              <SimpleList subtitle='CI/CD' contents={['Jenkins', 'GitLab CI', 'GitHub Actions', 'Azure Pipelines']} />
+              <SimpleList
+                subtitle='Languages' contents={
+                  ['Bash', 'Python', 'JavaScript', 'TypeScript']
+                }
+              />
+              <SimpleList
+                subtitle='CI/CD' contents={
+                  ['Jenkins', 'GitLab CI', 'GitHub Actions', 'Azure Pipelines', 'Bitbucket Pipelines']
+                }
+              />
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <SimpleList subtitle='Frameworks' contents={['Vue', 'SPFx', 'React', 'JQuery', 'NodeJS', 'Quasar', 'Bootstrap']} />
-              <SimpleList subtitle='Containers' contents={['Docker', 'Compose']} />
+              <SimpleList
+                subtitle='Frameworks'
+                contents={['Vue (Quasar)', 'React (Material)', 'JQuery (Bootstrap)', 'NodeJS (Express)']}
+              />
+              <SimpleList
+                subtitle='Platforms'
+                contents={['Azure VMs', 'Digital Ocean', 'AWS S3', 'AWS EC2', 'AWS ECR']}
+              />
             </Grid>
             <Grid item xs={12} sm={12} md={4}>
-              <SimpleList subtitle='Testing' contents={['Cypress', 'Puppeteer', 'SeleniumJS']} />
-              <SimpleList subtitle='Databases' contents={['MongoDB', 'SQL Server']} />
-              <SimpleList subtitle='OS' contents={['Windows 10', 'Ubuntu Server']} />
+              <SimpleList
+                subtitle='Containers'
+                contents={['Podman', 'Docker Swarm', 'Docker Compose']}
+              />
+              <SimpleList
+                subtitle='Databases'
+                contents={['MongoDB']}
+              />
+              <SimpleList
+                subtitle='OS'
+                contents={['macOS', 'Windows 10', 'Ubuntu Server']}
+              />
             </Grid>
           </Grid>
         </Grid>
