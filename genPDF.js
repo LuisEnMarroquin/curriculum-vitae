@@ -1,7 +1,7 @@
 const { existsSync, mkdirSync } = require('fs')
-const puppeteer = require('puppeteer'); // Dont remove this semicolon
+const puppeteer = require('puppeteer')
 
-(async () => {
+;(async () => {
   const build = './build'
   if (!existsSync(build)) mkdirSync(build)
 
@@ -10,7 +10,7 @@ const puppeteer = require('puppeteer'); // Dont remove this semicolon
   const width = 1295
   const height = 895
 
-  await page.goto('http://localhost:3000', { waitUntil: 'networkidle2' })
+  await page.goto('http://localhost:5000', { waitUntil: 'networkidle2' })
 
   await page.setViewport({ width, height })
 
