@@ -18,4 +18,3 @@ Just my CV using the following technologies:
 
 * [English](https://www.luismarroquin.com/cv-en.pdf)
 * [Spanish](https://www.luismarroquin.com/cv-es.pdf)
-* [Both in tar.gz](https://www.luismarroquin.com/cv.tar.gz)
