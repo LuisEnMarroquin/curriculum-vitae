@@ -3,7 +3,7 @@ const { exec } = require('child_process')
 const puppeteer = require('puppeteer')
 
 ;(async () => {
-  const child = exec('npm run serve', { encoding: 'utf8' }) // Start child process
+  const child = exec('npx serve -s build', { encoding: 'utf8' }) // Start child process
 
   const build = './build'
   if (!existsSync(build)) mkdirSync(build)

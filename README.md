@@ -1,12 +1,6 @@
 # Curriculum Vitae
 
-CloudFlare build command:
-
-```shell
-npm run build && node genPDF.js
-```
-
-## Generated PDFs
+Get the genetated PDFs from:
 
 * [English](https://www.luismarroquin.com/cv-en.pdf)
 * [Spanish](https://www.luismarroquin.com/cv-es.pdf)
