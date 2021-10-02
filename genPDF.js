@@ -1,17 +1,21 @@
 const { existsSync, mkdirSync } = require('fs')
+const { exec } = require('child_process')
 const puppeteer = require('puppeteer')
 
 ;(async () => {
+  const child = exec('npm run serve', { encoding: 'utf8' }) // Start child process
+
   const build = './build'
   if (!existsSync(build)) mkdirSync(build)
 
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()
+  await page.waitForTimeout(1000)
+
   const width = 1295
   const height = 895
 
   await page.goto('http://localhost:5000', { waitUntil: 'networkidle2' })
-
   await page.setViewport({ width, height })
 
   const baseElement = await page.$('#mainContainer')
@@ -30,4 +34,8 @@ const puppeteer = require('puppeteer')
   await page.pdf({ ...pagePDF, path: 'build/cv-es.pdf' })
 
   await browser.close()
+
+  await child.kill() // Kill child process
+
+  process.exit(0)
 })()
