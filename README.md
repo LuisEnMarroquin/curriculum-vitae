@@ -1,9 +1,26 @@
 # Curriculum Vitae
 
-* [English PDF](https://www.luismarroquin.com/cv-en.pdf)
-* [Spanish PDF](https://www.luismarroquin.com/cv-es.pdf)
+Just my CV using the following technologies:
 
-## Deployments and redirects
+* Create React App
+* GitHub Actions
+* GitHub Pages
+* JavaScript
+* Material UI
+* NodeJS
+* NPM
+* Puppeteer
+* React
+* SCSS
+* TypeScript
+
+## Download PDF
+
+* [English](https://www.luismarroquin.com/cv-en.pdf)
+* [Spanish](https://www.luismarroquin.com/cv-es.pdf)
+* [Both in tar.gz](https://www.luismarroquin.com/cv.tar.gz)
+
+## Deploys and redirects
 
 * https://marroquin.dev
 * https://www.marroquin.dev
