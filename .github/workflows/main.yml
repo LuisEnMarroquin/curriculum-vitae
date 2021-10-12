@@ -23,7 +23,7 @@ jobs:
     - name: Build project
       run: npm run build
     - name: Run in background
-      run: node server.js &
+      run: npx serve -s build &
     - name: Copy CNAME
       run: cp CNAME build/CNAME
     - name: Create PDFs
