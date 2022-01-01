@@ -15,7 +15,7 @@ const puppeteer = require('puppeteer')
   const width = 1295
   const height = 895
 
-  await page.goto('http://localhost:5000', { waitUntil: 'networkidle2' })
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle2' })
   await page.setViewport({ width, height })
 
   const baseElement = await page.$('#mainContainer')

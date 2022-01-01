@@ -20,7 +20,7 @@ Just my CV using the following technologies:
 * [Spanish](https://www.luismarroquin.com/cv-es.pdf)
 * [Both in tar.gz](https://www.luismarroquin.com/cv.tar.gz)
 
-## Deploys and redirects
+## Deployments and redirects
 
 * https://luismarroquin.com
 * https://marroquin.pages.dev
