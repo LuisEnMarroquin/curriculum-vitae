@@ -12,10 +12,9 @@ export const en = {
   techMain: 'Technical expertise',
   inteOpts: [
     'Process automation',
-    'Server management',
+    'Environment administration',
     'Full stack development',
-    'Application deployments',
-    'Algorithms and optimization'
+    'Application deployments'
   ],
   i18nOpts: [
     'Spanish (native)',
@@ -31,9 +30,9 @@ export const en = {
   ],
   arkuMain: `Full stack developer and DevOps engineer at Arkus Nexus (${arkTime})`,
   arkuText: [
-    'Frontend development using React, React Context, TypeScript, Styled Components and Material',
+    'Frontend development using React, Context, TypeScript, Styled Components and Material',
     'Backend creation with NodeJS, usando Express, Multer, TypeScript and Mongoose',
-    'Deploy automation to S3, ECR and ECS using Bitbucket Pipelines'
+    'Deploy automation to AWS services: S3, ECR and ECS using Bitbucket Pipelines'
   ],
   tecmMain: `Computer Engineering and Administration, TecMilenio University (${tecTime})`,
   tecmText: [
@@ -45,7 +44,7 @@ export const en = {
   ]
 }
 
-export const es = {
+export const es: typeof en = {
   inteMain: 'Áreas de interés',
   i18nMain: 'Idiomas',
   webSites: 'Sitios web',
@@ -55,10 +54,9 @@ export const es = {
   techMain: 'Conocimientos técnicos',
   inteOpts: [
     'Automatización de procesos',
-    'Administración de servidores',
+    'Administración de ambientes',
     'Desarrollo Full stack',
-    'Despliegue de aplicaciones',
-    'Algoritmos y optimización'
+    'Despliegue de aplicaciones'
   ],
   i18nOpts: [
     'Español (nativo)',
@@ -72,13 +70,13 @@ export const es = {
     'Automatización de procesos y despliegue de aplicaciones multi ambiente usando Jenkins, Azure Pipelines y GitLab CI',
     'Administración de servidores con Ubuntu Server con Nginx y multiples aplicaciones en contenedores con Docker Compose'
   ],
-  arkuMain: `Desarrollador Full stack e ingeniero DevOps en Arkus Nexus (${stkTime})`,
+  arkuMain: `Desarrollador Full stack e ingeniero DevOps en Arkus Nexus (${arkTime})`,
   arkuText: [
-    'Desarrollo frontend using React, React Context, TypeScript, Styled Components y Material',
+    'Desarrollo frontend using React, Context, TypeScript, Styled Components y Material',
     'Creación de backends con NodeJS, usando Express, Multer, TypeScript y Mongoose',
-    'Automatización de deploys a S3, ECR y ECS usando Bitbucket Pipelines'
+    'Automatización de deploys a los servicios de AWS: S3, ECR y ECS usando Bitbucket Pipelines'
   ],
-  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${arkTime})`,
+  tecmMain: `Ingeniería en Computación Administrativa, Universidad TecMilenio (${tecTime})`,
   tecmText: [
     'Diseñar algoritmos para crear sistemas capaces de procesar y transformar información, administrar y analizar datos de distintas áreas'
   ],

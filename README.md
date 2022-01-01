@@ -22,8 +22,6 @@ Just my CV using the following technologies:
 
 ## Deploys and redirects
 
-* https://marroquin.dev
-* https://www.marroquin.dev
 * https://luismarroquin.com
+* https://marroquin.pages.dev
 * https://www.luismarroquin.com
-* https://luismarroquin.pages.dev
