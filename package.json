@@ -33,11 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "ts-standard": {
-    "ignore": [
-      "build/",
-      "src/react-app-env.d.ts"
-    ]
   }
 }
