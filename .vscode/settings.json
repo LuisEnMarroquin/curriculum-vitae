@@ -1,0 +1,29 @@
+{
+  "editor.tabSize": 2,
+  "json.maxItemsComputed": 5000,
+  "editor.formatOnPaste": false,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "editor.detectIndentation": false,
+  "css.lint.unknownAtRules": "ignore",
+  "javascript.validate.enable": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.exclude": {
+    "**/node_modules/": true,
+    "src/react-app-env.d.ts": true
+  },
+  "search.exclude": {
+    "**/*.svg": true,
+    "**/build/": true,
+    "**/package-lock.json": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.sortMembers": true,
+    "source.organizeImports": true
+  }
+}
