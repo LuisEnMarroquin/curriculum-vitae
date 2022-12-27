@@ -67,9 +67,21 @@ body {
     @apply font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl;
   }
   h2 {
-    @apply text-xl;
+    @apply font-semibold text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+  h3 {
+    @apply font-medium text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+  h4 {
+    @apply font-normal text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+  h5 {
+    @apply font-medium text-sm sm:text-base md:text-lg lg:text-xl;
+  }
+  h6 {
+    @apply font-normal text-sm sm:text-base md:text-lg lg:text-xl;
   }
   p {
-    @apply text-xs sm:text-sm leading-5 sm:leading-6;
+    @apply font-normal text-xs sm:text-sm md:text-base lg:text-lg;
   }
 }
